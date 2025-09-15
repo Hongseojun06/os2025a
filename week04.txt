@@ -1,5 +1,7 @@
 리눅스 명령어
-vi file name
+
+vi 파일명(vi file name)
+
 
 깃명령어
 
