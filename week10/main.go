@@ -1,8 +1,20 @@
 package main
 
-import "greeting"
+import (
+	"fmt"
+	"keyboard"
+	"log"
+)
 
 func main() {
-	greeting.Hello()
-	greeting.Hi()
+	fmt.Print("점수 입력:")
+	score, err := keyboard.GetFloat()
+	if err != nil {
+		log.Fatal(err)
+	}
+	if score >= 80 {
+		fmt.Printf("%.1f점은 합격!", score)
+	} else {
+		fmt.Printf("%.1f점은 불합격입니다", score)
+	}
 }
