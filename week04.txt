@@ -1,11 +1,11 @@
 리눅스 명령어
-history | less
+history | less(명령어 기록(history)을 한 화면에 다 못 볼 때, 스크롤 하면서 천천히 볼 수 있게 하는 명령어)
 
 
 깃명령어
 
-git commit --amend -m "수정할 커밋 메세지"
-git reset --hard HEAD~최근커밋부터 삭제할 갯수
-git fetch
-git pull
-git push -f origin main 
+git commit --amend -m "수정할 커밋 메세지" 
+git reset --hard HEAD~최근커밋부터 삭제할 갯수 
+git fetch  (commit만 바뀜 코드는 x)
+git pull (commit도 바뀌고 코드도 바뀜)
+git push -f origin main (amend,reset으로 수정했을때 강제로 덮어씌우기 수정했으면 뿌리가 다름)

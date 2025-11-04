@@ -1,15 +1,15 @@
 리눅스 명령어
-echo "출력할 내용">> 파일명
-rm 파일명
+echo "출력할 내용">> 파일명 (>덮어쓰기 ,>>뒤에 이어쓰기)
+rm 파일명 (rm --cached ->이건 .gitignore(*.exe)  후 기존 .exe파일도 추적못하게한다) 
 history
 
 
 깃 명령어
-git branch -M main
+git branch -M main (브랜치 주소 변경)
 git remote add origin https://github.com/아이디/원격리포지토리이름.git
 git push -u origin main
 git push
-git remote -v
+git remote -v (프로젝트에 연결된 원격 저장소 목록과 주소를 확인)
 git remote remove origin 
 git clone 원격리포지토리주소
-git clone 원격리포지토리주소 .
+git clone 원격리포지토리주소 . (현재 폴더에 저장)

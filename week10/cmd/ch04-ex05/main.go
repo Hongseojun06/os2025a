@@ -5,7 +5,7 @@ import (
 	"log"
 
 	//"week10/pkg/keyboard"
-	"github.com/headfirstgo/keyboard"
+	"github.com/headfirstgo/keyboard" // go get github.com/headfirstgo/keyboard
 )
 
 func main() {
@@ -14,5 +14,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("%.1f점은 합격\n", n)
+	fmt.Printf("%.1f\n", n)
 }

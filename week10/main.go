@@ -7,14 +7,11 @@ import (
 )
 
 func main() {
-	fmt.Print("점수 입력:")
-	score, err := keyboard.GetFloat()
+	fmt.Print("화씨 온도 입력:")
+	fahrenheit, err := keyboard.GetFloat()
 	if err != nil {
 		log.Fatal(err)
 	}
-	if score >= 80 {
-		fmt.Printf("%.1f점은 합격!", score)
-	} else {
-		fmt.Printf("%.1f점은 불합격입니다", score)
-	}
+	celsius := (fahrenheit - 32) * 5 / 9
+	fmt.Printf("화씨온도 %.2f도 섭씨온도는 %.2f도입니다.", fahrenheit, celsius)
 }
