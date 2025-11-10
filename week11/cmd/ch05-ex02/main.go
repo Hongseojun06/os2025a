@@ -22,5 +22,5 @@ func main() {
 	}
 
 	weeks := float64(len(weights))
-	fmt.Println("평균:", hap/weeks)
+	fmt.Println("주차별 고기 소비량 평균:", hap/weeks)
 }
